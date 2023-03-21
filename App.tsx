@@ -7,7 +7,7 @@ import {
 } from '@expo-google-fonts/inter';
 import { theme } from './src/theme/index';
 import { HomeScreen } from './src/screens';
-import { Loading } from './src/components/loading';
+import { Loading } from './src/components/Loading';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
