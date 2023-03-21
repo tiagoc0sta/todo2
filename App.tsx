@@ -1,11 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'react-native';
 import {
   useFonts,
   Inter_400Regular,
   Inter_700Bold,
 } from '@expo-google-fonts/inter';
-import { theme } from './src/theme/index';
 import { HomeScreen } from './src/screens';
 import { Loading } from './src/components/Loading';
 
@@ -18,7 +16,11 @@ export default function App() {
   return (
     <>
       {fontsLoaded ? <HomeScreen /> : <Loading />}
-      <StatusBar style='auto' />
+      <StatusBar
+        barStyle='light-content'
+        backgroundColor='transparent'
+        translucent
+      />
     </>
   );
 }
