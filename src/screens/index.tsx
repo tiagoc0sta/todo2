@@ -22,7 +22,9 @@ export function HomeScreen() {
             </View>
           </View>
         </View>
-        <Task />
+        <Task title='Estudar React Native' isCompleted />
+        <Task title='Estudar React Native' isCompleted />
+        <Task title='Estudar React Native' isCompleted />
       </View>
     </View>
   );

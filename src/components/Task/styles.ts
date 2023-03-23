@@ -16,4 +16,21 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: theme.colors.base.gray400,
   },
+  textContainer: {
+    width: '80%',
+    height: 40,
+    alignContent: 'center',
+    justifyContent: 'center',
+    marginHorizontal: 8,
+  },
+  textDone: {
+    fontSize: theme.font_size.md,
+    color: theme.colors.base.gray300,
+    textDecorationLine: 'line-through',
+  },
+  textCreated: {
+    fontSize: theme.font_size.md,
+    color: theme.colors.base.gray100,
+    textDecorationLine: 'none',
+  },
 });
