@@ -1,5 +1,6 @@
 import { Text, View } from 'react-native';
 import { Header } from '../components/Header';
+import { Task } from '../components/Task';
 import { styles } from './styles';
 
 export function HomeScreen() {
@@ -21,6 +22,7 @@ export function HomeScreen() {
             </View>
           </View>
         </View>
+        <Task />
       </View>
     </View>
   );
