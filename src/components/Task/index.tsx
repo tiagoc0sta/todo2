@@ -19,7 +19,9 @@ export function Task({ title, isCompleted }: TaskDTO) {
         />
       </TouchableOpacity>
       <View style={styles.textContainer}>
-        <Text style={styles.textCreated}>{title}</Text>
+        <Text style={isCompleted ? styles.textDone : styles.textCreated}>
+          {title}
+        </Text>
       </View>
       <TouchableOpacity>
         <MaterialCommunityIcons
