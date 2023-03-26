@@ -13,6 +13,7 @@ type HeaderProps = {
 export function Header({ task, onChangeText, onPress }: HeaderProps) {
   return (
     <View style={styles.headerContainer}>
+      //
       <Image source={logoImage} />
       <View style={styles.form}>
         <TextInput
